@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/dp12"
+    android:paddingBottom="@dimen/dp12">
+
+    <ImageView
+        android:id="@+id/move_commodity_image"
+        android:layout_width="@dimen/dp67"
+        android:layout_height="@dimen/dp67"
+        android:layout_marginEnd="@dimen/dp18"
+        android:background="#EEF1F4" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/move_commodity_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="itemName"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp14"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/move_commodity_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dp5"
+            android:text="itemSize"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp14"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/move_commodity_spec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dp7"
+            android:text="itemSpec"
+            android:textColor="#B6B9BF"
+            android:textSize="@dimen/sp12"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/move_commodity_checkbox"
+        android:layout_width="@dimen/dp20"
+        android:layout_height="@dimen/dp20"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:src="@drawable/selector_checkbox" />
+
+
+</LinearLayout>

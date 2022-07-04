@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/replenish_options_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EBEBEB"
+        android:gravity="center"
+        android:paddingTop="@dimen/dp6"
+        android:paddingBottom="@dimen/dp6"
+        android:text="【选择报告类型】"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp14" />
+
+    <LinearLayout
+        android:id="@+id/replenish_options_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp12"
+        android:layout_marginEnd="@dimen/dp12"
+        android:orientation="vertical" />
+
+</LinearLayout>

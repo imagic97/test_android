@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_dialog_popup_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/dp12"
+    android:paddingTop="@dimen/dp19"
+    android:paddingBottom="@dimen/dp23">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp18"
+        android:gravity="center"
+        android:text="筛选"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp16" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp12"
+        android:background="@drawable/selector_popup_options_item_bg"
+        android:drawableStart="@drawable/selector_option_filter_arrow"
+        android:drawablePadding="@dimen/dp5"
+        android:paddingHorizontal="@dimen/dp12"
+        android:paddingVertical="@dimen/dp15"
+        android:text="近七天销售量"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp14" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp12"
+        android:background="@drawable/selector_popup_options_item_bg"
+        android:drawableStart="@drawable/selector_option_filter_arrow"
+        android:drawablePadding="@dimen/dp5"
+        android:paddingHorizontal="@dimen/dp12"
+        android:paddingVertical="@dimen/dp15"
+        android:text="近七天销售额"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp14" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp12"
+        android:background="@drawable/selector_popup_options_item_bg"
+        android:drawableStart="@drawable/selector_option_filter_arrow"
+        android:drawablePadding="@dimen/dp5"
+        android:paddingHorizontal="@dimen/dp12"
+        android:paddingVertical="@dimen/dp15"
+        android:text="累计销量"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp14" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp12"
+        android:background="@drawable/selector_popup_options_item_bg"
+        android:drawableStart="@drawable/selector_option_filter_arrow"
+        android:drawablePadding="@dimen/dp5"
+        android:paddingHorizontal="@dimen/dp12"
+        android:paddingVertical="@dimen/dp15"
+        android:text="累计销售额"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp14" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp12"
+        android:background="@drawable/selector_popup_options_item_bg"
+        android:drawableStart="@drawable/selector_option_filter_arrow"
+        android:drawablePadding="@dimen/dp5"
+        android:paddingHorizontal="@dimen/dp12"
+        android:paddingVertical="@dimen/dp15"
+        android:text="库存数"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp14" />
+
+</LinearLayout>

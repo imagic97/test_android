@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9FAFB"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp12"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_chevron_down_b"
+                android:paddingVertical="@dimen/dp12"
+                android:text="季节"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp14" />
+
+            <View xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:background="@drawable/shape_dotted_line"
+                android:layerType="software" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_chevron_down_b"
+                android:paddingVertical="@dimen/dp12"
+                android:text="DPET"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp14" />
+
+            <View xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:background="@drawable/shape_dotted_line"
+                android:layerType="software" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_chevron_down_b"
+                android:paddingVertical="@dimen/dp12"
+                android:text="LINE"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp14" />
+
+            <View xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:background="@drawable/shape_dotted_line"
+                android:layerType="software" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dp12"
+                android:paddingBottom="@dimen/dp8"
+                android:text="价格范围"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp14" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_report_filter_input_bg"
+                    android:padding="@dimen/dp10"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp14" />
+
+                <View
+                    android:layout_width="@dimen/dp8"
+                    android:layout_height="@dimen/dp1"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="@dimen/dp10"
+                    android:background="@color/black" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_report_filter_input_bg"
+                    android:padding="@dimen/dp10"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp14" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dp12"
+                android:paddingBottom="@dimen/dp8"
+                android:text="库存范围"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp14" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_report_filter_input_bg"
+                    android:padding="@dimen/dp10"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp14" />
+
+                <View
+                    android:layout_width="@dimen/dp8"
+                    android:layout_height="@dimen/dp1"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="@dimen/dp10"
+                    android:background="@color/black" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_report_filter_input_bg"
+                    android:padding="@dimen/dp10"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp14" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dp12"
+                android:paddingBottom="@dimen/dp8"
+                android:text="分类"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp14" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_report_filter_btn_bg"
+                    android:paddingHorizontal="@dimen/dp10"
+                    android:paddingVertical="@dimen/dp5"
+                    android:text="RFID"
+                    android:textColor="@drawable/selector_textcolor_b2w" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp12"
+                    android:background="@drawable/selector_report_filter_btn_bg"
+                    android:paddingHorizontal="@dimen/dp10"
+                    android:paddingVertical="@dimen/dp5"
+                    android:text="非RFID"
+                    android:textColor="@drawable/selector_textcolor_b2w" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp12"
+                    android:background="@drawable/selector_report_filter_btn_bg"
+                    android:paddingHorizontal="@dimen/dp10"
+                    android:paddingVertical="@dimen/dp5"
+                    android:text="全部"
+                    android:textColor="@drawable/selector_textcolor_b2w" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/dp12"
+        android:paddingVertical="@dimen/dp4">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp41"
+            android:layout_weight="1"
+            android:background="@drawable/selector_secondary_btn_bg"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp16"
+            android:paddingTop="@dimen/dp10"
+            android:paddingRight="@dimen/dp16"
+            android:paddingBottom="@dimen/dp10"
+            android:text="重置"
+            android:textColor="@color/white" />
+
+        <View
+            android:id="@+id/btn_space"
+            android:layout_width="@dimen/dp10"
+            android:layout_height="0dp" />
+
+        <Button
+            android:id="@+id/submit_btn"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp41"
+            android:layout_weight="1"
+            android:background="@drawable/selector_primary_btn_bg"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp16"
+            android:paddingTop="@dimen/dp10"
+            android:paddingRight="@dimen/dp16"
+            android:paddingBottom="@dimen/dp10"
+            android:singleLine="true"
+            android:text="确定"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

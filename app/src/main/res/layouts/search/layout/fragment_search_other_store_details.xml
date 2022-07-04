@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9FAFB"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp200"
+                android:background="#EBEBEB" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp17"
+                android:background="@drawable/store_name_bg"
+                android:paddingVertical="@dimen/dp5"
+                android:paddingStart="@dimen/dp12"
+                android:paddingEnd="@dimen/dp42"
+                android:text="无印良品大悦城店"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp16" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp13"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/dp12">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_position_r"
+                    android:drawablePadding="@dimen/dp4"
+                    android:text="上海市西北路198号伤害静安大悦城北座3层"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp4"
+                    android:text="·1.52km"
+                    android:textColor="#92959B"
+                    android:textSize="@dimen/sp12" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp12"
+                android:layout_marginTop="@dimen/dp8"
+                android:drawableStart="@drawable/ic_phone"
+                android:drawablePadding="@dimen/dp4"
+
+                android:text="021-36391753"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp12" />
+
+            <com.smartid.muji_rfid_app.ui.widgets.tableLayout.FreeScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dp12"
+                android:layout_marginTop="@dimen/dp16">
+
+                <com.smartid.muji_rfid_app.ui.widgets.tableLayout.TableLayout
+                    android:id="@+id/main_table"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    app:tableColumnPadding="@dimen/dp12"
+                    app:tableDividerColor="@color/black"
+                    app:tableDividerSize="1px"
+                    app:tableRowHeight="@dimen/dp23"
+                    app:tableRowWidth="@dimen/dp43"
+                    app:tableTextColor="@color/black"
+                    app:tableTextSize="@dimen/sp12" />
+
+            </com.smartid.muji_rfid_app.ui.widgets.tableLayout.FreeScrollView>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp21"
+                android:background="@drawable/shape_search_route_btn_bg"
+                android:drawableStart="@drawable/ic_route"
+                android:paddingHorizontal="@dimen/dp65"
+                android:paddingVertical="@dimen/dp10"
+                android:text="路线"
+                android:textColor="@color/main_color"
+                android:textSize="@dimen/sp14" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

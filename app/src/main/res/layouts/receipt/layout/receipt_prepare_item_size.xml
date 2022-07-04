@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/dp10">
+
+    <TextView
+        android:id="@+id/receipt_size_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="XS"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp12" />
+
+    <TextView
+        android:id="@+id/receipt_size_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:textAllCaps="false"
+        android:textColor="@color/main_color"
+        android:textSize="@dimen/sp12" />
+
+</LinearLayout>

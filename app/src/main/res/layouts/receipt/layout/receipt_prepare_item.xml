@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp12"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingHorizontal="@dimen/dp12">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingVertical="@dimen/dp5"
+        android:paddingEnd="@dimen/dp5">
+
+        <ImageView
+            android:id="@+id/receipt_image"
+            android:layout_width="@dimen/dp110"
+            android:layout_height="@dimen/dp110"
+            android:background="#EBEBEB" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp7"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp3"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/receipt_area_sells"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dp3"
+                    android:background="@drawable/shape_radius_2_r"
+                    android:paddingHorizontal="@dimen/dp7"
+                    android:paddingVertical="@dimen/dp3"
+                    android:text="37"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp12" />
+
+                <TextView
+                    android:id="@+id/receipt_store_sells"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dp5"
+                    android:background="@drawable/shape_radius_2_p"
+                    android:paddingHorizontal="@dimen/dp7"
+                    android:paddingVertical="@dimen/dp3"
+                    android:text="37"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp12" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/receipt_is_lock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/selector_search_lock"
+                        android:lineSpacingMultiplier="0.9"
+                        android:text="09/12\n11:49"
+                        android:textColor="@drawable/selector_receipt_lock_textcolor"
+                        android:textSize="@dimen/sp10" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/receipt_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4550344730828"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp14" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp2"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/receipt_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="纯棉衬衫"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp14" />
+
+                        <TextView
+                            android:id="@+id/receipt_spec"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dp11"
+                            android:text="藏青色"
+                            android:textColor="#B6B9BF"
+                            android:textSize="@dimen/sp14" />
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp2"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="价格："
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp14" />
+
+                        <TextView
+                            android:id="@+id/receipt_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="￥128"
+                            android:textColor="#F93030"
+                            android:textSize="@dimen/sp14" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:background="@drawable/shape_receipt_exp_bg"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="@dimen/dp10"
+                    android:paddingVertical="@dimen/dp3">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="EXP"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp14" />
+
+                    <EditText
+                        android:id="@+id/receipt_exp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:inputType="number"
+                        android:text="8"
+                        android:textAlignment="center"
+                        android:textColor="#FF9900"
+                        android:textSize="@dimen/sp14" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/receipt_sizes_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp2"
+                android:background="#EEF1F4" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/receipt_is_new"
+        android:layout_width="@dimen/dp44"
+        android:layout_height="@dimen/dp16"
+        android:src="@drawable/ic_badge_new" />
+
+    <ImageView
+        android:id="@+id/receipt_is_tick"
+        android:layout_width="@dimen/dp38"
+        android:layout_height="@dimen/dp38"
+        android:layout_gravity="end"
+        android:src="@drawable/ic_badge_tick" />
+</FrameLayout>

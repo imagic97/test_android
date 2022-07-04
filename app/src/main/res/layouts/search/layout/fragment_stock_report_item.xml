@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/dp12"
+        android:paddingTop="@dimen/dp8"
+        android:paddingEnd="@dimen/dp12"
+        android:paddingBottom="@dimen/dp8">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/commodity_image"
+                android:layout_width="@dimen/dp67"
+                android:layout_height="@dimen/dp67"
+                android:background="#EEF1F4" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/dp8">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/commodity_prefix_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4550344"
+                        android:textColor="#B6B9BF"
+                        android:textSize="@dimen/sp14" />
+
+                    <TextView
+                        android:id="@+id/commodity_suffix_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-730828"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp14" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/commodity_is_active"
+                            android:layout_width="@dimen/dp24"
+                            android:layout_height="@dimen/dp24"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="@dimen/dp4"
+                            android:src="@drawable/selector_search_lock" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dp5"
+                            android:background="@drawable/shape_radius_2_r"
+                            android:paddingHorizontal="@dimen/dp7"
+                            android:paddingVertical="@dimen/dp3"
+                            android:text="37"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp14" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dp3"
+                            android:background="@drawable/shape_radius_2_p"
+                            android:paddingHorizontal="@dimen/dp7"
+                            android:paddingVertical="@dimen/dp3"
+                            android:text="37"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp14" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/commodity_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="纯棉衬衫"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp14" />
+
+                    <TextView
+                        android:id="@+id/commodity_spec"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp11"
+                        android:text="藏青色"
+                        android:textColor="#B6B9BF"
+                        android:textSize="@dimen/sp14" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp3"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/commodity_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="￥128"
+                        android:textColor="#F93030"
+                        android:textSize="@dimen/sp14" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/commodity_days"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/dp8"
+                            android:text="【30天】"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp14" />
+
+                        <TextView
+                            android:id="@+id/commodity_week_sales"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="9"
+                            android:textColor="#006FFF"
+                            android:textSize="@dimen/sp14" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginHorizontal="@dimen/dp8"
+                            android:layout_marginVertical="@dimen/dp3"
+                            android:background="#006FFF" />
+
+                        <TextView
+                            android:id="@+id/commodity_total_sales"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="9"
+                            android:textColor="#006FFF"
+                            android:textSize="@dimen/sp14" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dp5"
+                            android:text="销量"
+                            android:textColor="#006FFF"
+                            android:textSize="@dimen/sp14" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="@dimen/dp8"
+            android:layout_marginBottom="@dimen/dp8"
+            android:background="@drawable/shape_dotted_line"
+            android:layerType="software" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/details_sizes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

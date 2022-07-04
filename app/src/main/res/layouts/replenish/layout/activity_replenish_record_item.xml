@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingTop="5.5dp"
+    android:paddingBottom="5.5dp">
+
+    <ImageView
+        android:id="@+id/record_item_state"
+        android:layout_width="@dimen/dp20"
+        android:layout_height="@dimen/dp20"
+        android:layout_marginEnd="@dimen/dp12"
+        android:src="@drawable/selector_record_history_state" />
+
+    <TextView
+        android:id="@+id/record_item_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="08:00-09:00"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp14"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/record_item_sells"
+        android:layout_width="@dimen/dp98"
+        android:layout_height="match_parent"
+        android:paddingStart="@dimen/dp6"
+        android:text="35"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp14"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/record_item_replenish"
+        android:layout_width="@dimen/dp98"
+        android:layout_height="match_parent"
+        android:paddingStart="@dimen/dp6"
+        android:text="35"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp14"
+        android:textStyle="bold" />
+
+</LinearLayout>

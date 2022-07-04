@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.search.SearchActivity">
+
+    <FrameLayout
+        android:id="@+id/fragment_content"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_weight="1"
+        android:background="@color/main_color" />
+
+    <LinearLayout
+        android:id="@+id/activity_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/dp12"
+        android:paddingEnd="@dimen/dp12">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/search_tab_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp6"
+                android:layout_marginBottom="@dimen/dp6"
+                android:background="@drawable/selector_tabs_bg"
+                android:drawableTop="@drawable/ic_tab_search"
+                android:paddingStart="@dimen/dp4"
+                android:paddingTop="@dimen/dp7"
+                android:paddingEnd="@dimen/dp4"
+                android:paddingBottom="@dimen/dp7"
+                android:stateListAnimator="@null"
+                android:text="在库查询"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp13" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/search_tab_report"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp6"
+                android:layout_marginBottom="@dimen/dp6"
+                android:background="@drawable/selector_tabs_bg"
+                android:drawableTop="@drawable/ic_tab_report"
+                android:paddingStart="@dimen/dp4"
+                android:paddingTop="@dimen/dp7"
+                android:paddingEnd="@dimen/dp4"
+                android:paddingBottom="@dimen/dp7"
+                android:stateListAnimator="@null"
+                android:text="库存报告"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp13" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/search_tab_locks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp6"
+                android:layout_marginBottom="@dimen/dp6"
+                android:background="@drawable/selector_tabs_bg"
+                android:drawableTop="@drawable/ic_tab_locks"
+                android:paddingStart="@dimen/dp4"
+                android:paddingTop="@dimen/dp7"
+                android:paddingEnd="@dimen/dp4"
+                android:paddingBottom="@dimen/dp7"
+                android:stateListAnimator="@null"
+                android:text="锁定商品"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp13" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/search_tab_settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp6"
+                android:layout_marginBottom="@dimen/dp6"
+                android:background="@drawable/selector_tabs_bg"
+                android:drawableTop="@drawable/ic_tab_settings"
+                android:paddingStart="@dimen/dp4"
+                android:paddingTop="@dimen/dp7"
+                android:paddingEnd="@dimen/dp4"
+                android:paddingBottom="@dimen/dp7"
+                android:stateListAnimator="@null"
+                android:text="设置"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp13" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/search_tab_more"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp6"
+                android:layout_marginBottom="@dimen/dp6"
+                android:background="@drawable/selector_tabs_bg"
+                android:drawableTop="@drawable/ic_tab_more"
+                android:paddingStart="@dimen/dp4"
+                android:paddingTop="@dimen/dp7"
+                android:paddingEnd="@dimen/dp4"
+                android:paddingBottom="@dimen/dp7"
+                android:stateListAnimator="@null"
+                android:text="更多"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp13" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

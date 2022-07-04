@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9FAFB"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_toolbar" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp12"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/dp192"
+                android:layout_height="@dimen/dp192"
+                android:background="#EBEBEB" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp6"
+                android:text="请选择需要探测的商品尺寸"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp14" />
+
+            <com.smartid.muji_rfid_app.ui.widgets.tableLayout.FreeScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp6">
+
+                <com.smartid.muji_rfid_app.ui.widgets.tableLayout.TableLayout
+                    android:id="@+id/main_table"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    app:backgroundColorHeader="#EBEBEB"
+                    app:backgroundColorHeaderMode="row"
+                    app:backgroundColorSelected="@color/main_color"
+                    app:selectedMode="row"
+                    app:tableColumnPadding="@dimen/dp12"
+                    app:tableDividerColor="@color/black"
+                    app:tableDividerSize="1px"
+                    app:tableRowHeight="@dimen/dp23"
+                    app:tableRowWidth="@dimen/dp111"
+                    app:tableTextColor="@color/black"
+                    app:tableTextColorSelected="@color/white"
+                    app:tableTextSize="@dimen/sp12" />
+
+            </com.smartid.muji_rfid_app.ui.widgets.tableLayout.FreeScrollView>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/activity_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp4"
+        android:paddingBottom="@dimen/dp4">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/tab_signal"
+                android:layout_width="@dimen/dp100"
+                android:layout_height="@dimen/dp35"
+                android:src="@drawable/ic_signal"
+                android:stateListAnimator="@null" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/tab_read"
+                android:layout_width="@dimen/dp100"
+                android:layout_height="@dimen/dp35"
+                android:background="@drawable/selector_search_tab_read_bg"
+                android:stateListAnimator="@null"
+                android:text="Read"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp14"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

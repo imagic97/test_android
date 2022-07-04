@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dp2"
+            android:background="@color/main_color"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/dp12"
+            android:paddingTop="@dimen/dp11"
+            android:paddingEnd="@dimen/dp12"
+            android:paddingBottom="@dimen/dp11">
+
+            <TextView
+                android:id="@+id/replenish_activity_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AW"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp12" />
+
+            <TextView
+                android:id="@+id/replenish_activity_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2021"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/dp0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/dp12"
+            android:paddingEnd="@dimen/dp12">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/replenish_category_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="男装  仓库"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp12" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/replenish_secondary_category_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="男装  衬衫"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp12" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/dp12"
+        android:paddingTop="@dimen/dp8"
+        android:paddingEnd="@dimen/dp12"
+        android:paddingBottom="@dimen/dp8">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/replenish_commodity_image"
+                android:layout_width="@dimen/dp67"
+                android:layout_height="@dimen/dp67"
+                android:background="#EEF1F4" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/dp8">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/replenish_commodity_prefix_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4550344"
+                        android:textColor="#B6B9BF"
+                        android:textSize="@dimen/sp14" />
+
+                    <TextView
+                        android:id="@+id/replenish_commodity_suffix_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-730828"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/dp4">
+
+                    <TextView
+                        android:id="@+id/replenish_commodity_origin_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="￥128"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp14" />
+
+                    <TextView
+                        android:id="@+id/replenish_commodity_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp11"
+                        android:text="￥128"
+                        android:textColor="#F93030"
+                        android:textSize="@dimen/sp14" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/replenish_commodity_spec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp6"
+                    android:text="藏青色"
+                    android:textColor="#B6B9BF"
+                    android:textSize="@dimen/sp14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/replenish_commodity_is_urgent"
+                        android:layout_width="@dimen/dp24"
+                        android:layout_height="@dimen/dp24"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/dp4"
+                        android:src="@drawable/selector_replenish" />
+
+                    <ImageView
+                        android:id="@+id/replenish_commodity_is_same_day"
+                        android:layout_width="@dimen/dp24"
+                        android:layout_height="@dimen/dp24"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/dp8"
+                        android:src="@drawable/selector_truck" />
+
+                    <ImageView
+                        android:id="@+id/replenish_commodity_checkbox"
+                        android:layout_width="@dimen/dp20"
+                        android:layout_height="@dimen/dp20"
+                        android:layout_gravity="center"
+                        android:src="@drawable/selector_checkbox" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp23"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/replenish_commodity_category"
+                        android:layout_width="@dimen/dp20"
+                        android:layout_height="@dimen/dp20"
+                        android:layout_gravity="center"
+                        android:src="@drawable/selector_shirt" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="@dimen/dp8"
+            android:layout_marginBottom="@dimen/dp8"
+            android:background="@drawable/shape_dotted_line"
+            android:layerType="software" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/replenish_details_sizes_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

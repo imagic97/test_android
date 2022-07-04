@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.move.MoveActivity">
+
+    <FrameLayout
+        android:id="@+id/fragment_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp0"
+        android:layout_weight="1"
+        android:background="@color/main_color" />
+
+    <LinearLayout
+        android:id="@+id/activity_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/move_in_shop_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp6"
+                android:layout_marginBottom="@dimen/dp6"
+                android:background="@drawable/selector_tabs_bg"
+                android:drawableTop="@drawable/ic_tab_move"
+                android:paddingStart="@dimen/dp12"
+                android:paddingTop="@dimen/dp7"
+                android:paddingEnd="@dimen/dp12"
+                android:paddingBottom="@dimen/dp7"
+                android:stateListAnimator="@null"
+                android:text="店内移动"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp13" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/move_non_sales_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp6"
+                android:layout_marginBottom="@dimen/dp6"
+                android:background="@drawable/selector_tabs_bg"
+                android:drawableTop="@drawable/ic_tab_no_sale"
+                android:paddingStart="@dimen/dp12"
+                android:paddingTop="@dimen/dp7"
+                android:paddingEnd="@dimen/dp12"
+                android:paddingBottom="@dimen/dp7"
+                android:stateListAnimator="@null"
+                android:text="非销售区"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp13" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+
+            <Button
+                android:id="@+id/move_retain_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp6"
+                android:layout_marginBottom="@dimen/dp6"
+                android:background="@drawable/selector_tabs_bg"
+                android:drawableTop="@drawable/ic_tab_retain"
+                android:paddingStart="@dimen/dp12"
+                android:paddingTop="@dimen/dp7"
+                android:paddingEnd="@dimen/dp12"
+                android:paddingBottom="@dimen/dp7"
+                android:stateListAnimator="@null"
+                android:text="顾客保留区"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp13" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

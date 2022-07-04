@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9FAFB"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_toolbar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:gravity="end"
+        android:paddingHorizontal="@dimen/dp12"
+        android:paddingVertical="@dimen/dp5"
+        android:text="合计：500件"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp12" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/search_report_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

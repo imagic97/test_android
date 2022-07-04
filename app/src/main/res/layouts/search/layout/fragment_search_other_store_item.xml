@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_search_other_store_item_bg"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/dp8"
+    android:paddingTop="@dimen/dp8"
+    android:paddingBottom="@dimen/dp14">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dp8">
+
+        <TextView
+            android:id="@+id/other_store_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="500096"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp14" />
+
+        <TextView
+            android:id="@+id/other_store_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp12"
+            android:text="伤害悠迈生活广场"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp14" />
+
+        <TextView
+            android:id="@+id/other_store_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp12"
+            android:text="电话：***********"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp14" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/other_store_btns_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

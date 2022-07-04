@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/dp12">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_common_dialog_bg"
+        android:orientation="vertical"
+        android:padding="@dimen/dp16">
+
+        <TextView
+            android:id="@+id/app_progress_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp7"
+            android:text="60%"
+            android:textAlignment="textStart"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/sp14" />
+
+        <ProgressBar
+            android:id="@+id/app_progress_graphics"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp6"
+            android:max="200"
+            android:min="0"
+            android:progress="20"
+            android:progressDrawable="@drawable/progress_bg" />
+
+        <TextView
+            android:id="@+id/app_progress_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingVertical="@dimen/dp20"
+            android:text="读取中..."
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp16" />
+
+        <Button
+            android:id="@+id/app_progress_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/dp3"
+            android:background="@drawable/selector_primary_btn_bg"
+            android:paddingHorizontal="@dimen/dp38"
+            android:paddingVertical="@dimen/dp11"
+            android:text="取消"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp14" />
+    </LinearLayout>
+</LinearLayout>

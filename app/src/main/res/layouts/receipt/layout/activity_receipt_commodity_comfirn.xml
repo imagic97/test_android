@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.receipt.ReceiptCommodityConfirmActivity">
+
+    <include layout="@layout/common_toolbar" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EBEBEB"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="5.5dp"
+        android:paddingBottom="5.5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingStart="@dimen/dp12"
+            android:text="商品"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp14" />
+
+        <TextView
+            android:layout_width="@dimen/dp98"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/dp6"
+            android:text="预计数量"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp14" />
+
+        <TextView
+            android:layout_width="@dimen/dp98"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/dp6"
+            android:text="读取数量"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp14" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/receipt_commodities_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/receipt_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp43"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/dp12"
+        android:paddingVertical="@dimen/dp4">
+
+        <ImageButton
+            android:id="@+id/receipt_popup_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dp12"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:paddingVertical="@dimen/dp8"
+            android:src="@drawable/selector_receipt_actions_popup_btn" />
+
+        <Button
+            android:id="@+id/receipt_read_btn"
+            android:layout_width="@dimen/dp80"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_primary_btn_bg"
+            android:paddingVertical="@dimen/dp8"
+            android:text="Read"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp14" />
+
+        <Button
+            android:id="@+id/receipt_scan_btn"
+            android:layout_width="@dimen/dp80"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp12"
+            android:background="@drawable/selector_primary_btn_bg"
+            android:paddingVertical="@dimen/dp8"
+            android:text="Scan"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp14" />
+
+
+        <ImageButton
+            android:id="@+id/receipt_next_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp12"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:paddingVertical="@dimen/dp8"
+            android:src="@drawable/ic_share" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

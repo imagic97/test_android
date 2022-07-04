@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.smartid.muji_rfid_app.ui.widgets.EntryBtnLayout
+        android:id="@+id/replenish_btn_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/dp12"
+        android:layout_marginEnd="@dimen/dp12"
+        android:gravity="center"
+        android:paddingTop="@dimen/dp14"
+        android:paddingBottom="@dimen/dp14"
+        app:animation="scale"
+        app:backgroundColor="#990925"
+        app:overColor="#FFFFFF"
+        app:overRadius="@dimen/dp40"
+        app:radius="@dimen/dp4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:tag="TextView"
+            android:text="action_first"
+            android:textColor="@drawable/selector_textcolor_b2w"
+            android:textSize="@dimen/sp16"
+            android:textStyle="bold" />
+
+    </com.smartid.muji_rfid_app.ui.widgets.EntryBtnLayout>
+
+    <com.smartid.muji_rfid_app.ui.widgets.EntryBtnLayout
+        android:id="@+id/replenish_btn_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/dp12"
+        android:layout_marginTop="@dimen/dp24"
+        android:layout_marginEnd="@dimen/dp12"
+        android:gravity="center"
+        android:paddingTop="@dimen/dp14"
+        android:paddingBottom="@dimen/dp14"
+        app:animation="scale"
+        app:backgroundColor="#990925"
+        app:overColor="#FFFFFF"
+        app:overRadius="@dimen/dp40"
+        app:radius="@dimen/dp4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:tag="TextView"
+            android:text="action_second"
+            android:textColor="@drawable/selector_textcolor_b2w"
+            android:textSize="@dimen/sp16"
+            android:textStyle="bold" />
+
+    </com.smartid.muji_rfid_app.ui.widgets.EntryBtnLayout>
+
+</LinearLayout>

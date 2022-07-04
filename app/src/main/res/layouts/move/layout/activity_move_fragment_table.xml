@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#F9FAFB"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/table_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EBEBEB"
+            android:gravity="center"
+            android:paddingTop="@dimen/dp6"
+            android:paddingBottom="@dimen/dp6">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="@dimen/dp12"
+                android:text="商品"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp14" />
+
+            <TextView
+                android:layout_width="@dimen/dp98"
+                android:layout_height="wrap_content"
+                android:text="数量"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp14" />
+
+            <TextView
+                android:layout_width="@dimen/dp98"
+                android:layout_height="wrap_content"
+                android:text="尺寸"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp14" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/table_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp4"
+        android:paddingBottom="@dimen/dp4">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/tab_signal"
+                android:layout_width="@dimen/dp100"
+                android:layout_height="@dimen/dp35"
+                android:src="@drawable/ic_signal"
+                android:stateListAnimator="@null" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/tab_read"
+                android:layout_width="@dimen/dp100"
+                android:layout_height="@dimen/dp35"
+                android:background="@drawable/selector_tab_read_bg"
+                android:stateListAnimator="@null"
+                android:text="Read"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp14"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/tab_count"
+                android:layout_width="@dimen/dp100"
+                android:layout_height="@dimen/dp35"
+                android:stateListAnimator="@null"
+                android:text="14"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp14"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:background="#EEF1F4" />
+
+</LinearLayout>

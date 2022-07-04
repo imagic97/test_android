@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9FAFB"
+    android:orientation="vertical"
+    tools:context=".ui.receipt.ReceiptCommodityEditActivity">
+
+    <include layout="@layout/common_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/dp12"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/dp8"
+            android:paddingVertical="@dimen/dp3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/commodity_image"
+                    android:layout_width="@dimen/dp110"
+                    android:layout_height="@dimen/dp110"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:background="#EBEBEB" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp7"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp3"
+                            android:layout_marginEnd="@dimen/dp7"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/commodity_code"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="4550344730828"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/sp14" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/commodity_name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dp3"
+                                    android:text="纯棉衬衫"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/sp14" />
+
+                                <TextView
+                                    android:id="@+id/commodity_spec"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/dp16"
+                                    android:layout_marginTop="@dimen/dp3"
+                                    android:text="S"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/sp14" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/rfid_inset_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp10"
+                            android:background="@drawable/selector_primary_btn_bg"
+                            android:paddingHorizontal="@dimen/dp10"
+                            android:paddingVertical="@dimen/dp6"
+                            android:text="植入RDID"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp12" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/commodity_package_id_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp3"
+                        android:text="50061211020389173"
+                        android:textColor="#92959B"
+                        android:textSize="@dimen/sp14" />
+
+                    <TextView
+                        android:id="@+id/commodity_package_id_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp3"
+                        android:text="50061211020389173"
+                        android:textColor="#92959B"
+                        android:textSize="@dimen/sp14" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/shape_dotted_line"
+                android:layerType="software" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingVertical="@dimen/dp14">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp3"
+                        android:text="应收："
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp14" />
+
+
+                    <TextView
+                        android:id="@+id/commodity_expect_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp3"
+                        android:text="10"
+                        android:textColor="#F93030"
+                        android:textSize="@dimen/sp14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/rfid_actual_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp3"
+                        android:text="实收："
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp14" />
+
+                    <TextView
+                        android:id="@+id/commodity_actual_count_rfid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp3"
+                        android:text="10"
+                        android:textColor="#F93030"
+                        android:textSize="@dimen/sp14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/not_rfid_actual_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/commodity_count_decrease_btn"
+                        android:layout_width="@dimen/dp28"
+                        android:layout_height="@dimen/dp28"
+                        android:layout_gravity="center"
+                        android:background="@drawable/ic_decrease_btn" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp2"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="@dimen/dp9">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="实收"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp10" />
+
+                        <TextView
+                            android:id="@+id/commodity_actual_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10"
+                            android:textColor="#F93030"
+                            android:textSize="@dimen/sp14" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/commodity_count_increase_btn"
+                        android:layout_width="@dimen/dp28"
+                        android:layout_height="@dimen/dp28"
+                        android:layout_gravity="center"
+                        android:background="@drawable/ic_increase_btn" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="@dimen/dp4">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/tab_signal"
+                android:layout_width="@dimen/dp100"
+                android:layout_height="@dimen/dp35"
+                android:src="@drawable/ic_signal"
+                android:stateListAnimator="@null" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/tab_read"
+                android:layout_width="@dimen/dp100"
+                android:layout_height="@dimen/dp35"
+                android:background="@drawable/selector_tab_read_bg"
+                android:stateListAnimator="@null"
+                android:text="Read"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp14"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" />
+    </LinearLayout>
+
+</LinearLayout>

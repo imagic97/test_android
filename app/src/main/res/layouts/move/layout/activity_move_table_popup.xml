@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_popup_bg"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/dp5"
+    android:paddingTop="@dimen/dp5"
+    android:paddingEnd="@dimen/dp5"
+    android:paddingBottom="@dimen/dp5">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp29"
+        android:background="@drawable/selector_popup_btn_bg"
+        android:paddingStart="@dimen/dp17"
+        android:paddingEnd="@dimen/dp17"
+        android:stateListAnimator="@null"
+        android:text="高频 (5m内)"
+        android:textColor="@drawable/selector_textcolor_b2w"
+        android:textSize="@dimen/sp14" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp29"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/selector_popup_btn_bg"
+        android:paddingStart="@dimen/dp17"
+        android:paddingEnd="@dimen/dp17"
+        android:stateListAnimator="@null"
+        android:text="中频 (3m内)"
+        android:textColor="@drawable/selector_textcolor_b2w"
+        android:textSize="@dimen/sp14" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp29"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/selector_popup_btn_bg"
+        android:paddingStart="@dimen/dp17"
+        android:paddingEnd="@dimen/dp17"
+        android:stateListAnimator="@null"
+        android:text="接触"
+        android:textColor="@drawable/selector_textcolor_b2w"
+        android:textSize="@dimen/sp14" />
+
+</LinearLayout>

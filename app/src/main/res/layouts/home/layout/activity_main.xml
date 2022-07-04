@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_main_bg"
+    android:orientation="vertical"
+    tools:context=".ui.home.MainActivity">
+
+    <include layout="@layout/activity_main_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dp24"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp60"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_muji_logo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp44"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.smartid.muji_rfid_app.ui.widgets.EntryBtnLayout
+                android:id="@+id/entry_move"
+                android:layout_width="@dimen/dp111"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:animation="scale"
+                app:backgroundColor="#990925"
+                app:overColor="#FFFFFF"
+                app:overRadius="@dimen/dp50"
+                app:radius="@dimen/dp4">
+
+                <ImageView
+                    android:layout_width="@dimen/dp77"
+                    android:layout_height="@dimen/dp77"
+                    android:layout_gravity="center"
+                    android:duplicateParentState="true"
+                    android:src="@drawable/selector_main_entry_move" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/dp13"
+                    android:height="@dimen/dp21"
+                    android:duplicateParentState="true"
+                    android:text="店内移动"
+                    android:textColor="@drawable/selector_textcolor_b2w" />
+            </com.smartid.muji_rfid_app.ui.widgets.EntryBtnLayout>
+
+            <View
+                android:layout_width="@dimen/dp24"
+                android:layout_height="@dimen/dp111" />
+
+            <com.smartid.muji_rfid_app.ui.widgets.EntryBtnLayout
+                android:id="@+id/entry_replenish"
+                android:layout_width="@dimen/dp111"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:animation="scale"
+                app:backgroundColor="#990925"
+                app:overColor="#FFFFFF"
+                app:overRadius="@dimen/dp50"
+                app:radius="@dimen/dp4">
+
+                <ImageView
+                    android:layout_width="@dimen/dp77"
+                    android:layout_height="@dimen/dp77"
+                    android:layout_gravity="center"
+                    android:duplicateParentState="true"
+                    android:src="@drawable/selector_main_entry_new" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/dp13"
+                    android:height="@dimen/dp21"
+                    android:duplicateParentState="true"
+                    android:text="商品补充"
+                    android:textColor="@drawable/selector_textcolor_b2w" />
+            </com.smartid.muji_rfid_app.ui.widgets.EntryBtnLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp24"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.smartid.muji_rfid_app.ui.widgets.EntryBtnLayout
+                android:id="@+id/entry_search"
+                android:layout_width="@dimen/dp111"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:animation="scale"
+                app:backgroundColor="#990925"
+                app:overColor="#FFFFFF"
+                app:overRadius="@dimen/dp50"
+                app:radius="@dimen/dp4">
+
+                <ImageView
+                    android:layout_width="@dimen/dp77"
+                    android:layout_height="@dimen/dp77"
+                    android:layout_gravity="center"
+                    android:duplicateParentState="true"
+                    android:src="@drawable/selector_main_entry_search" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/dp13"
+                    android:height="@dimen/dp21"
+                    android:duplicateParentState="true"
+                    android:text="商品查询"
+                    android:textColor="@drawable/selector_textcolor_b2w" />
+            </com.smartid.muji_rfid_app.ui.widgets.EntryBtnLayout>
+
+            <View
+                android:layout_width="@dimen/dp24"
+                android:layout_height="@dimen/dp111" />
+
+            <com.smartid.muji_rfid_app.ui.widgets.EntryBtnLayout
+                android:id="@+id/entry_receipt"
+                android:layout_width="@dimen/dp111"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:animation="scale"
+                app:backgroundColor="#990925"
+                app:overColor="#FFFFFF"
+                app:overRadius="@dimen/dp50"
+                app:radius="@dimen/dp4">
+
+                <ImageView
+                    android:layout_width="@dimen/dp77"
+                    android:layout_height="@dimen/dp77"
+                    android:layout_gravity="center"
+                    android:duplicateParentState="true"
+                    android:src="@drawable/selector_main_entry_receipt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/dp13"
+                    android:height="@dimen/dp21"
+                    android:duplicateParentState="true"
+                    android:text="门店收货"
+                    android:textColor="@drawable/selector_textcolor_b2w" />
+            </com.smartid.muji_rfid_app.ui.widgets.EntryBtnLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp12"
+        android:gravity="center"
+        android:text="版本 v1.0.0"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp12"
+        android:textStyle="normal" />
+
+</LinearLayout>

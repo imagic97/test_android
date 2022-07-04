@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#F9FAFB"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/dp12"
+        android:paddingTop="@dimen/dp12"
+        android:paddingEnd="@dimen/dp12"
+        android:paddingBottom="@dimen/dp12">
+
+        <com.smartid.muji_rfid_app.ui.widgets.EntryBtnLayout
+            android:id="@+id/action_move_sells"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:backgroundColor="@color/white"
+            app:from="@dimen/dp85"
+            app:isAnimated="true"
+            app:overColor="@color/main_color"
+            app:overRadius="@dimen/dp50"
+            app:radius="@dimen/dp4">
+
+            <ImageView
+                android:layout_width="@dimen/dp36"
+                android:layout_height="@dimen/dp36"
+                android:layout_marginStart="@dimen/dp33"
+                android:layout_marginTop="@dimen/dp22"
+                android:layout_marginEnd="@dimen/dp27"
+                android:layout_marginBottom="@dimen/dp22"
+                android:src="@drawable/selector_actions_move_to_sells" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="移动至卖场"
+                    android:textColor="@drawable/selector_textcolor_b2w"
+                    android:textSize="@dimen/sp16"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Move to store"
+                    android:textColor="@drawable/selector_textcolor_g2w"
+                    android:textSize="@dimen/sp16"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="@dimen/dp20"
+                android:layout_height="@dimen/dp20"
+                android:layout_marginEnd="@dimen/dp9"
+                android:src="@drawable/selector_actions_chevron_right" />
+
+        </com.smartid.muji_rfid_app.ui.widgets.EntryBtnLayout>
+
+        <com.smartid.muji_rfid_app.ui.widgets.EntryBtnLayout
+            android:id="@+id/action_move_warehouse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:gravity="center"
+            app:backgroundColor="@color/white"
+            app:from="@dimen/dp85"
+            app:isAnimated="true"
+            app:overColor="@color/main_color"
+            app:overRadius="@dimen/dp50"
+            app:radius="@dimen/dp4">
+
+            <ImageView
+                android:layout_width="@dimen/dp36"
+                android:layout_height="@dimen/dp36"
+                android:layout_marginStart="@dimen/dp33"
+                android:layout_marginTop="@dimen/dp22"
+                android:layout_marginEnd="@dimen/dp27"
+                android:layout_marginBottom="@dimen/dp22"
+                android:src="@drawable/selector_actions_move_to_warehouse" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="移动至仓库"
+                    android:textColor="@drawable/selector_textcolor_b2w"
+                    android:textSize="@dimen/sp16"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Move to warehouse"
+                    android:textColor="@drawable/selector_textcolor_g2w"
+                    android:textSize="@dimen/sp16"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="@dimen/dp20"
+                android:layout_height="@dimen/dp20"
+                android:layout_marginEnd="@dimen/dp9"
+                android:src="@drawable/selector_actions_chevron_right" />
+
+        </com.smartid.muji_rfid_app.ui.widgets.EntryBtnLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/drawer_shadow"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/drawer_close_btn"
+            android:layout_width="@dimen/dp18"
+            android:layout_height="@dimen/dp18"
+            android:layout_marginStart="@dimen/dp14"
+            android:layout_marginTop="@dimen/dp18"
+            android:background="@drawable/ic_close_b" />
+
+
+        <ListView
+            android:id="@+id/main_drawer_list"
+            android:layout_width="@dimen/dp180"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp17"
+            android:layout_marginEnd="@dimen/dp23"
+            android:layout_marginBottom="@dimen/dp22"
+            android:background="@drawable/shape_drawer_content_bg"
+            android:divider="@null"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dp10"
+            android:paddingBottom="@dimen/dp10" />
+    </LinearLayout>
+
+</LinearLayout>
+

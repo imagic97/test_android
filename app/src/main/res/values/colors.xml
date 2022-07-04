@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_color">#FF7F0019</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#FFEBEBEB</color>
+
+    <color name="text_bg">#FFEEF1F4</color>
+
+    <!--  抽屉  -->
+    <color name="drawer_item_hover">#B2B2B3</color>
+
+    <!--  tab 按钮  -->
+    <color name="tab_btn_bg_hover">#FFEEF1F4</color>
+
+    <!--  主要按钮色  -->
+    <color name="primary_btn_bg">#FF7F0019</color>
+    <color name="primary_btn_bg_hover">#FF500010</color>
+
+    <!--  次要按钮色  -->
+    <color name="secondary_btn_bg">#FF000000</color>
+    <color name="secondary_btn_bg_hover">#FF92959B</color>
+
+    <!--  第三按钮色  -->
+    <color name="tertiary_btn_bg">#FFD6D6D6</color>
+    <color name="tertiary_btn_bg_hover">#FFAEAEAE</color>
+
+
+    <color name="receipt_package_item_default">#FFFFFFFF</color>
+    <color name="receipt_package_item_receipted">#FF13BB7C</color>
+    <color name="receipt_package_item_not_receipt">#FFF93030</color>
+</resources>

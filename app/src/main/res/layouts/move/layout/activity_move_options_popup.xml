@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_dialog_popup_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/dp12">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp16"
+        android:layout_marginBottom="@dimen/dp18"
+        android:gravity="center"
+        android:text="移动到"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp16" />
+
+    <LinearLayout
+        android:id="@+id/popup_options_retain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_popup_options_item_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/dp9"
+        android:paddingTop="@dimen/dp9"
+        android:paddingBottom="@dimen/dp9">
+
+        <ImageView
+            android:layout_width="@dimen/dp28"
+            android:layout_height="@dimen/dp28"
+            android:layout_marginEnd="@dimen/dp18"
+            android:src="@drawable/ic_tab_retain" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="移动至保留区"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp14" />
+
+        <ImageView
+            android:layout_width="@dimen/dp20"
+            android:layout_height="@dimen/dp20"
+            android:layout_marginEnd="@dimen/dp10"
+            android:src="@drawable/selector_actions_chevron_right" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/popup_options_sells"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp12"
+        android:background="@drawable/selector_popup_options_item_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/dp9"
+        android:paddingTop="@dimen/dp9"
+        android:paddingBottom="@dimen/dp9">
+
+        <ImageView
+            android:layout_width="@dimen/dp28"
+            android:layout_height="@dimen/dp28"
+            android:layout_marginEnd="@dimen/dp18"
+            android:src="@drawable/ic_sells_b" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="移动至卖场"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp14" />
+
+        <ImageView
+            android:layout_width="@dimen/dp20"
+            android:layout_height="@dimen/dp20"
+            android:layout_marginEnd="@dimen/dp10"
+            android:src="@drawable/selector_actions_chevron_right" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/popup_options_warehouse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp12"
+        android:background="@drawable/selector_popup_options_item_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/dp9"
+        android:paddingTop="@dimen/dp9"
+        android:paddingBottom="@dimen/dp9">
+
+        <ImageView
+            android:layout_width="@dimen/dp28"
+            android:layout_height="@dimen/dp28"
+            android:layout_marginEnd="@dimen/dp18"
+            android:src="@drawable/ic_warehouse_b" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="移动至仓库"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp14" />
+
+        <ImageView
+            android:layout_width="@dimen/dp20"
+            android:layout_height="@dimen/dp20"
+            android:layout_marginEnd="@dimen/dp10"
+            android:src="@drawable/selector_actions_chevron_right" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/popup_options_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp32"
+        android:layout_marginBottom="@dimen/dp24"
+        android:background="@drawable/selector_tertiary_btn_bg"
+        android:paddingStart="@dimen/dp91"
+        android:paddingTop="@dimen/dp12"
+        android:paddingEnd="@dimen/dp91"
+        android:paddingBottom="@dimen/dp12"
+        android:text="取消"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp16"
+        android:textStyle="bold" />
+</LinearLayout>

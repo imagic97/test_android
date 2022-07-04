@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp60"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingStart="@dimen/dp12"
+    android:paddingEnd="@dimen/dp12">
+
+    <Button
+        android:id="@+id/main_menu_btn"
+        android:layout_width="@dimen/dp24"
+        android:layout_height="@dimen/dp24"
+        android:background="@drawable/ic_menu" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/main_gps_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp24"
+        android:background="@color/transparent"
+        android:drawableStart="@drawable/ic_position"
+        android:text="上海美罗城"
+        android:textColor="@color/white" />
+
+</LinearLayout>

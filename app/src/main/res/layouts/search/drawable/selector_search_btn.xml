@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/shape_search_btn_normal" android:state_focused="false" />
+    <item android:drawable="@drawable/shape_search_btn_less" android:state_focused="true" />
+    <item android:drawable="@drawable/shape_search_btn_warn" android:state_activated="true" />
+</selector>

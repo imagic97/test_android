@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F9FAFB"
+    android:orientation="horizontal"
+    android:paddingHorizontal="@dimen/dp12"
+    android:paddingBottom="@dimen/dp8">
+
+    <TextView
+        android:id="@+id/spec_key"
+        android:layout_width="@dimen/dp72"
+        android:layout_height="wrap_content"
+        android:text="商品名称："
+        android:textColor="#92959B"
+        android:textSize="@dimen/sp14" />
+
+    <TextView
+        android:id="@+id/spec_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="法兰绒 中长衬衫"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp14" />
+
+</LinearLayout>

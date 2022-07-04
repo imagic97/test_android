@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9FAFB"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_toolbar" />
+
+    <include
+        layout="@layout/search_commodity_info"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="@dimen/dp12"
+        android:layout_marginBottom="@dimen/dp12"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp12"
+        android:layout_marginEnd="@dimen/dp12"
+        android:orientation="horizontal">
+
+        <com.smartid.muji_rfid_app.ui.widgets.tableLayout.FreeScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.smartid.muji_rfid_app.ui.widgets.tableLayout.TableLayout
+                android:id="@+id/main_table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                app:backgroundColorHeader="@color/main_color"
+                app:backgroundColorHeaderMode="column"
+                app:tableColumnPadding="@dimen/dp12"
+                app:tableDividerColor="@color/black"
+                app:tableDividerSize="1px"
+                app:tableRowHeight="@dimen/dp23"
+                app:tableRowWidth="@dimen/dp43"
+                app:tableTextColor="@color/black"
+                app:tableTextSize="@dimen/sp12" />
+
+        </com.smartid.muji_rfid_app.ui.widgets.tableLayout.FreeScrollView>
+    </LinearLayout>
+
+    <include layout="@layout/search_swiper_specs" />
+
+</LinearLayout>

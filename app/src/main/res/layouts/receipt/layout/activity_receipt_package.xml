@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.receipt.ReceiptPackageActivity">
+
+    <include layout="@layout/common_toolbar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:paddingVertical="@dimen/dp6"
+        android:text="【箱信息】"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp14" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/receipt_package_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/dp16"
+        android:paddingVertical="@dimen/dp12">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="预计：4"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp14" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="收到：4"
+            android:textAlignment="center"
+            android:textColor="#13BB7C"
+            android:textSize="@dimen/sp14" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="未收到：4"
+            android:textAlignment="textEnd"
+            android:textColor="#F93030"
+            android:textSize="@dimen/sp14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/receipt_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp43"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingVertical="@dimen/dp4">
+
+        <ImageButton
+            android:id="@+id/receipt_popup_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:paddingVertical="@dimen/dp8"
+            android:src="@drawable/selector_receipt_actions_popup_btn" />
+
+        <View
+            android:layout_width="@dimen/dp45"
+            android:layout_height="0dp" />
+
+        <Button
+            android:id="@+id/receipt_scan_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_primary_btn_bg"
+            android:paddingVertical="@dimen/dp8"
+            android:text="Scan"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp14" />
+
+        <View
+            android:layout_width="@dimen/dp45"
+            android:layout_height="0dp" />
+
+        <ImageButton
+            android:id="@+id/receipt_next_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:paddingVertical="@dimen/dp8"
+            android:src="@drawable/ic_share" />
+
+    </LinearLayout>
+
+</LinearLayout>

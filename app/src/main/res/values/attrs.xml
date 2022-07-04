@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="EntryBtnLayout">
+        <attr name="backgroundColor" format="color" />
+        <attr name="isAnimated" format="boolean" />
+        <attr name="overColor" format="color" />
+        <attr name="radius" format="dimension" />
+        <attr name="from" format="dimension" />
+        <attr name="overRadius" format="dimension" />
+        <attr name="animation">
+            <flag name="translate" value="0x0001" />
+            <flag name="scale" value="0x0010" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="TableLayout">
+        <attr name="selectedMode" format="enum">
+            <enum name="none" value="0" />
+            <enum name="row" value="1" />
+            <enum name="column" value="2" />
+            <enum name="cell" value="3" />
+        </attr>
+        <attr name="backgroundColorHeaderMode" format="enum">
+            <enum name="none" value="0" />
+            <enum name="row" value="1" />
+            <enum name="column" value="2" />
+        </attr>
+        <attr name="tableRowWidth" format="dimension" />
+        <attr name="tableRowHeight" format="dimension" />
+        <attr name="tableDividerSize" format="dimension" />
+        <attr name="tableDividerColor" format="color" />
+        <attr name="tableColumnPadding" format="dimension" />
+        <attr name="tableTextGravity" format="enum">
+            <enum name="center" value="0" />
+            <enum name="leftCenter" value="1" />
+            <enum name="rightCenter" value="2" />
+        </attr>
+        <attr name="tableTextSize" format="dimension" />
+        <attr name="tableTextColor" format="color" />
+        <attr name="tableTextColorSelected" format="color" />
+        <attr name="backgroundColorSelected" format="color" />
+        <attr name="backgroundColorHeader" format="color" />
+    </declare-styleable>
+</resources>

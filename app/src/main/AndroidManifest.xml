@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.smartid.muji_rfid_app">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission
+        android:name="android.permission.READ_LOGS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:name=".Application"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.App">
+        <activity
+            android:name=".ui.receipt.ReceiptCommodityRFIDInsetActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.receipt.ReceiptCommodityInfoInsetActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.receipt.ReceiptCommodityEditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.receipt.ReceiptCommodityConfirmActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.receipt.ReceiptPackageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.receipt.ReceiptPrepareActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.receipt.ReceiptListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.receipt.ReceiptPlanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.receipt.ReceiptActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.receipt" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.receipt" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.search.SearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.replenish_details.ReplenishDetailsActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.replenish_details" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.replenish_details" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.replenish_options.ReplenishOptionsActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.replenish_options" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.replenish_options" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.replenish_record.ReplenishRecordActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.replenish_record" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.replenish_record" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.replenish_sells.ReplenishSellsActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.replenish_sells" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.replenish_sells" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.replenish.ReplenishActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.replenish" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.replenish" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.move.MoveActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.move" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.move" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.login" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.login" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.home.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Bugly -->
+        <meta-data
+            android:name="BUGLY_APPID"
+            android:value="${BUGLY_APPID}" />
+        <meta-data
+            android:name="BUGLY_APP_VERSION"
+            android:value="${BUGLY_APP_VERSION}" />
+        <meta-data
+            android:name="BUGLY_APP_CHANNEL"
+            android:value="${BUGLY_APP_CHANNEL}" />
+        <meta-data
+            android:name="BUGLY_ENABLE_DEBUG"
+            android:value="${BUGLY_ENABLE_DEBUG}" />
+    </application>
+
+</manifest>

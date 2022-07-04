@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp12">
+
+    <ImageView
+        android:layout_width="@dimen/dp228"
+        android:layout_height="@dimen/dp228"
+        android:layout_gravity="center"
+        android:background="#DCE8E6" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp12"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp6"
+            android:background="@drawable/shape_search_commodity_info_left_text_bg"
+            android:drawableStart="@drawable/ic_search_lock_false"
+            android:gravity="start"
+            android:lineSpacingMultiplier="0.9"
+            android:paddingHorizontal="@dimen/dp5"
+            android:paddingVertical="@dimen/dp6"
+            android:text="09/12\n11:49"
+            android:textColor="#13BB7C"
+            android:textSize="@dimen/sp12" />
+
+        <Button
+            android:layout_width="@dimen/dp24"
+            android:layout_height="@dimen/dp24"
+            android:background="@drawable/ic_shirt_r" />
+
+        <TextView
+            android:layout_width="@dimen/dp80"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp2"
+            android:background="@drawable/float_commodity_info_bg"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/dp4"
+            android:lineSpacingMultiplier="1"
+            android:paddingTop="@dimen/dp9"
+            android:paddingBottom="@dimen/dp4"
+            android:text="731161\n731161\n731161\n731161"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp12"
+        android:background="@drawable/shape_search_commodity_info_center_text_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/dp18"
+            android:paddingVertical="@dimen/dp5"
+            android:text="陈列标准：12"
+            android:textColor="#FF9900"
+            android:textSize="@dimen/sp12" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/dp86"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/dp12"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_search_price_bg"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dp5"
+            android:paddingBottom="@dimen/dp5">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="￥128"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp14" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="￥128.9"
+                android:textColor="@color/main_color"
+                android:textSize="@dimen/sp14" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp6"
+            android:background="@drawable/shape_search_commodity_btns_bg"
+            android:orientation="vertical">
+
+            <com.smartid.muji_rfid_app.ui.widgets.EntryBtnLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                app:animation="scale"
+                app:backgroundColor="@color/main_color"
+                app:overColor="@color/white"
+                app:overRadius="@dimen/dp20"
+                app:radius="@dimen/dp4">
+
+                <ImageView
+                    android:layout_width="@dimen/dp24"
+                    android:layout_height="@dimen/dp24"
+                    android:background="@drawable/ic_decrease" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="信息"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp12" />
+
+            </com.smartid.muji_rfid_app.ui.widgets.EntryBtnLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <Button
+                    android:id="@+id/search_other_store_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp0"
+                    android:drawableStart="@drawable/ic_other_store"
+                    android:drawablePadding="0dp"
+                    android:paddingVertical="@dimen/dp3"
+                    android:paddingStart="@dimen/dp6"
+                    android:paddingEnd="@dimen/dp0"
+                    android:text="其它门店"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp12" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginHorizontal="2dp"
+                    android:background="#C24059" />
+
+                <Button
+                    android:id="@+id/search_specs_details_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp0"
+                    android:drawableStart="@drawable/ic_commodity_details"
+                    android:drawablePadding="0dp"
+                    android:paddingVertical="@dimen/dp3"
+                    android:paddingStart="@dimen/dp6"
+                    android:paddingEnd="@dimen/dp0"
+                    android:text="商品详情"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp12" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginHorizontal="2dp"
+                    android:background="#C24059" />
+
+                <Button
+                    android:id="@+id/search_probe_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp0"
+                    android:drawableStart="@drawable/ic_commodity_probe"
+                    android:drawablePadding="0dp"
+                    android:paddingVertical="@dimen/dp3"
+                    android:paddingStart="@dimen/dp6"
+                    android:paddingEnd="@dimen/dp0"
+                    android:text="商品探测"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp12" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

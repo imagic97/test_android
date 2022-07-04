@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--  未收到  -->
+    <item android:drawable="@color/receipt_package_item_not_receipt" android:state_enabled="true" />
+    <!--  已收到  -->
+    <item android:drawable="@color/receipt_package_item_receipted" android:state_activated="true" />
+    <!--  默认  -->
+    <item android:drawable="@color/receipt_package_item_default" android:state_activated="false" />
+</selector>

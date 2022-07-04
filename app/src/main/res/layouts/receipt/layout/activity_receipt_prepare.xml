@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.receipt.ReceiptPrepareActivity">
+
+    <include layout="@layout/common_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/dp12">
+
+            <TextView
+                android:id="@+id/receipt_tab_new"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_receipt_tab_bg"
+                android:paddingVertical="@dimen/dp11"
+                android:text="新品(29)"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp14" />
+
+            <TextView
+                android:id="@+id/receipt_tab_replenish"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_receipt_tab_bg"
+                android:paddingVertical="@dimen/dp11"
+                android:text="待补货(1)"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp14" />
+
+            <TextView
+                android:id="@+id/receipt_tab_locked"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_receipt_tab_bg"
+                android:paddingVertical="@dimen/dp11"
+                android:text="关锁商品(22)"
+                android:textAlignment="center"
+                android:textColor="@color/main_color"
+                android:textSize="@dimen/sp14" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/receipt_controller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EBEBEB"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/dp12">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/selector_receipt_sort"
+                    android:drawablePadding="@dimen/dp5"
+                    android:paddingVertical="@dimen/dp6"
+                    android:text="排序"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp14" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/receipt_controller_filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_receipt_filter"
+                    android:drawablePadding="@dimen/dp5"
+                    android:paddingVertical="@dimen/dp6"
+                    android:text="筛选"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp14" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#F9FAFB">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/receipt_commodities_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:layout_width="@dimen/dp48"
+                android:layout_height="@dimen/dp48"
+                android:layout_gravity="bottom|end"
+                android:layout_marginEnd="@dimen/dp12"
+                android:layout_marginBottom="@dimen/dp12"
+                android:background="@drawable/shape_receipt_float_btn_bg"
+                android:padding="@dimen/dp10"
+                android:src="@drawable/ic_check_ready" />
+
+            <ImageView
+                android:layout_width="@dimen/dp48"
+                android:layout_height="@dimen/dp48"
+                android:layout_gravity="bottom|end"
+                android:layout_marginEnd="@dimen/dp72"
+                android:layout_marginBottom="@dimen/dp12"
+                android:background="@drawable/shape_receipt_float_btn_bg"
+                android:padding="@dimen/dp10"
+                android:src="@drawable/ic_check_report" />
+
+            <ImageView
+                android:layout_width="@dimen/dp48"
+                android:layout_height="@dimen/dp48"
+                android:layout_gravity="bottom|end"
+                android:layout_marginEnd="@dimen/dp132"
+                android:layout_marginBottom="@dimen/dp12"
+                android:background="@drawable/shape_receipt_float_btn_bg"
+                android:padding="@dimen/dp10" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9FAFB"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp32"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="【30天】"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp14" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="@dimen/dp8"
+            android:layout_marginEnd="@dimen/dp8"
+            android:background="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9 销量"
+            android:textColor="#006FFF"
+            android:textSize="@dimen/sp14" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp10"
+            android:background="@drawable/shape_radius_2_r"
+            android:paddingHorizontal="@dimen/dp7"
+            android:paddingVertical="@dimen/dp3"
+            android:text="37"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp14" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp3"
+            android:background="@drawable/shape_radius_2_p"
+            android:paddingHorizontal="@dimen/dp7"
+            android:paddingVertical="@dimen/dp3"
+            android:text="37"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp14" />
+    </LinearLayout>
+
+    <include
+        layout="@layout/search_commodity_info"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/dp12"
+        android:layout_marginEnd="@dimen/dp12"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp12"
+        android:layout_marginEnd="@dimen/dp12"
+        android:orientation="horizontal">
+
+        <com.smartid.muji_rfid_app.ui.widgets.tableLayout.FreeScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.smartid.muji_rfid_app.ui.widgets.tableLayout.TableLayout
+                android:id="@+id/main_table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                app:backgroundColorHeader="@color/main_color"
+                app:backgroundColorHeaderMode="column"
+                app:tableColumnPadding="@dimen/dp12"
+                app:tableDividerColor="@color/black"
+                app:tableDividerSize="1px"
+                app:tableRowHeight="@dimen/dp18"
+                app:tableRowWidth="@dimen/dp43"
+                app:tableTextColor="@color/black"
+                app:tableTextSize="@dimen/sp12" />
+
+        </com.smartid.muji_rfid_app.ui.widgets.tableLayout.FreeScrollView>
+    </LinearLayout>
+
+    <include layout="@layout/search_swiper_specs" />
+
+</LinearLayout>

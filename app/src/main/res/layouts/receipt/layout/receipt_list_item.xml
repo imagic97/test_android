@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingHorizontal="@dimen/dp12"
+    android:paddingVertical="@dimen/dp6">
+
+    <ImageView
+        android:layout_width="@dimen/dp20"
+        android:layout_height="@dimen/dp20"
+        android:src="@drawable/ic_receipt_checkbox" />
+
+    <TextView
+        android:id="@+id/receipt_list_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp12"
+        android:layout_weight="1"
+        android:text="50061211020389173"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp14" />
+
+    <TextView
+        android:id="@+id/receipt_list_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp6"
+        android:text="13/3/21"
+        android:textColor="#92959B"
+        android:textSize="@dimen/sp14"
+        android:visibility="gone" />
+
+</LinearLayout>
